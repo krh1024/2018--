@@ -21,7 +21,9 @@
             
             update: function(){
                 if(keystate[UpArrow]) this.y -= 7;
-                if (keystate[DownArrow]) this.y += 7;
+                if(keystate[DownArrow]) this.y += 7;
+                if(keystate[LeftArrow]) this.z += 7;
+                if(keystate[RightArrow]) this.z -= 7;
             },
             draw: function() {
                 ctx.fillRect(this.x, this.y, this.width, this.height);
